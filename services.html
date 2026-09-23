@@ -12,7 +12,7 @@
   <style>
     .page-hero-banner {
       background: radial-gradient(circle at 80% 20%, rgba(253, 240, 240, 0.85) 0%, rgba(252, 252, 250, 0.95) 60%, var(--color-canvas) 100%);
-      padding: clamp(60px, 8vw, 96px) 0 clamp(40px, 6vw, 64px);
+      padding: clamp(48px, 7vw, 90px) 0 clamp(32px, 5vw, 60px);
       border-bottom: 1px solid var(--color-border);
       text-align: center;
     }
@@ -22,9 +22,9 @@
       background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-ivory) 100%);
       border: 1.5px solid var(--color-rose-300);
       border-radius: var(--radius-xl);
-      padding: clamp(32px, 5vw, 64px);
+      padding: clamp(24px, 4vw, 56px);
       box-shadow: var(--shadow-lg);
-      margin-bottom: clamp(60px, 8vw, 96px);
+      margin-bottom: clamp(44px, 6vw, 80px);
       position: relative;
       overflow: hidden;
     }
@@ -32,15 +32,15 @@
     .featured-service-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
+      gap: clamp(24px, 4vw, 48px);
       align-items: center;
     }
 
     .check-list-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px 20px;
-      margin: 24px 0 32px;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 12px 18px;
+      margin: 20px 0 28px;
     }
 
     .check-item {
@@ -61,8 +61,8 @@
       .featured-service-grid {
         grid-template-columns: 1fr;
       }
-      .check-list-grid {
-        grid-template-columns: 1fr;
+      .featured-service-hero {
+        border-radius: var(--radius-lg);
       }
     }
   </style>
