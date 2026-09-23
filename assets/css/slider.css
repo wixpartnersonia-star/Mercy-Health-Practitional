@@ -1,0 +1,547 @@
+/* ==========================================================================
+   MercyHealthCare - Revolution Slider Style Hero CSS
+   Cinematic Layered Transitions, Floating Medical Badges, Parallax, Controls
+   ========================================================================== */
+
+/* --- Slider Stage Viewport --- */
+.rev-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 75% 30%, rgba(253, 240, 240, 0.9) 0%, rgba(252, 252, 250, 0.95) 55%, var(--color-canvas) 100%);
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Background Ambient Medical Elements */
+.rev-ambient-glow {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(247, 227, 229, 0.7) 0%, rgba(216, 183, 140, 0.12) 60%, transparent 80%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+  animation: revPulseAura 10s ease-in-out infinite alternate;
+}
+
+@keyframes revPulseAura {
+  0% { transform: scale(0.95) translate(0, 0); opacity: 0.6; }
+  100% { transform: scale(1.08) translate(-20px, 20px); opacity: 0.85; }
+}
+
+/* Concentric Medical Rings */
+.rev-medical-ring {
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(228, 167, 175, 0.25);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.rev-ring-1 {
+  width: 440px;
+  height: 440px;
+  animation: revRingRotate 35s linear infinite;
+}
+
+.rev-ring-2 {
+  width: 600px;
+  height: 600px;
+  border-style: dashed;
+  border-color: rgba(216, 183, 140, 0.2);
+  animation: revRingRotateRev 45s linear infinite;
+}
+
+@keyframes revRingRotate {
+  from { transform: translate(50%, -50%) rotate(0deg); }
+  to { transform: translate(50%, -50%) rotate(360deg); }
+}
+
+@keyframes revRingRotateRev {
+  from { transform: translate(50%, -50%) rotate(360deg); }
+  to { transform: translate(50%, -50%) rotate(0deg); }
+}
+
+/* Subtle Animated Heartbeat / ECG Wave Line across Hero */
+.rev-ecg-svg {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.22;
+}
+
+.rev-ecg-path {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: revEcgBeat 4s ease-in-out infinite;
+}
+
+@keyframes revEcgBeat {
+  0% { stroke-dashoffset: 800; opacity: 0.2; }
+  50% { stroke-dashoffset: 0; opacity: 0.7; }
+  100% { stroke-dashoffset: -800; opacity: 0.2; }
+}
+
+/* Slider Track & Slides */
+.rev-slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.rev-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 40px 0 70px;
+}
+
+.rev-slide.is-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.rev-slide-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(30px, 5vw, 60px);
+  width: 100%;
+}
+
+/* Left: Text & Action Layer */
+.rev-text-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 4;
+}
+
+/* Staggered Entrance Animations */
+.rev-slide.is-active .rev-eyebrow {
+  animation: revStaggerFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.rev-slide.is-active .rev-heading {
+  animation: revStaggerFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
+}
+
+.rev-slide.is-active .rev-supporting {
+  animation: revStaggerFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
+}
+
+.rev-slide.is-active .rev-actions {
+  animation: revStaggerFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.56s both;
+}
+
+@keyframes revStaggerFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(32px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.rev-eyebrow {
+  margin-bottom: 18px;
+}
+
+.rev-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.85rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-charcoal-950);
+  margin-bottom: 22px;
+  max-width: 660px;
+}
+
+.rev-heading strong {
+  font-weight: 600;
+  color: var(--color-charcoal-950);
+}
+
+.rev-heading em {
+  font-style: italic;
+  color: var(--color-rose-600);
+}
+
+.rev-supporting {
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  color: var(--color-text-body);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 580px;
+}
+
+.rev-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Right: Layered Visual & Nurse Portrait Stage */
+.rev-visual-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 580px;
+  z-index: 3;
+}
+
+.rev-slide.is-active .rev-visual-stage {
+  animation: revImageReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+}
+
+@keyframes revImageReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(36px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Backdrop Frame / Arch */
+.rev-portrait-backdrop {
+  position: absolute;
+  width: 420px;
+  height: 520px;
+  border-radius: 220px 220px 40px 40px;
+  background: linear-gradient(180deg, rgba(253, 240, 240, 0.95) 0%, rgba(247, 227, 229, 0.6) 100%);
+  border: 1.5px solid rgba(228, 167, 175, 0.35);
+  box-shadow: 0 20px 60px -15px rgba(196, 109, 119, 0.2);
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Primary Nurse Portrait Cut-Out */
+.rev-nurse-img {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-height: 570px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(29, 33, 40, 0.12));
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom center;
+}
+
+/* Floating Medical UI Info Cards */
+.rev-float-card {
+  position: absolute;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  box-shadow: 0 16px 36px -10px rgba(29, 33, 40, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition-fast);
+}
+
+.rev-float-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 45px -10px rgba(196, 109, 119, 0.22);
+}
+
+/* Floating Card 1: Experience & Credentials */
+.rev-card-exp {
+  top: 12%;
+  left: -20px;
+  animation: revFloatSlow 6s ease-in-out infinite alternate;
+}
+
+/* Floating Card 2: 24/7 Availability */
+.rev-card-avail {
+  bottom: 14%;
+  right: -10px;
+  animation: revFloatSlow 7s ease-in-out 1s infinite alternate;
+}
+
+/* Floating Card 3: Vitals / Listening */
+.rev-card-vital {
+  bottom: 22%;
+  left: -25px;
+  animation: revFloatSlow 8s ease-in-out 0.5s infinite alternate;
+}
+
+@keyframes revFloatSlow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-12px); }
+}
+
+.rev-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-blush-100);
+  border: 1px solid var(--color-blush-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-rose-600);
+  flex-shrink: 0;
+}
+
+.rev-card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.rev-card-icon.gold {
+  background: var(--color-champagne-light);
+  border-color: rgba(216, 183, 140, 0.4);
+  color: var(--color-champagne-deep);
+}
+
+.rev-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.rev-card-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-charcoal-900);
+  line-height: 1.2;
+}
+
+.rev-card-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Live Green Dot inside card */
+.live-pulse-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  margin-right: 4px;
+  box-shadow: 0 0 8px var(--color-success);
+}
+
+/* --- Revolution Slider Navigation & Controls --- */
+
+/* Top Auto-Progress Timer Bar */
+.rev-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(228, 167, 175, 0.2);
+  z-index: 20;
+}
+
+.rev-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-rose-500), var(--color-champagne));
+  transition: width 0.1s linear;
+}
+
+/* Bottom Controls Bar */
+.rev-controls-wrap {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+.rev-controls-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left / Right Arrow Controls */
+.rev-arrows {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rev-arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-800);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.rev-arrow-btn:hover {
+  background: var(--color-rose-500);
+  color: #FFFFFF;
+  border-color: var(--color-rose-500);
+  transform: scale(1.08);
+  box-shadow: var(--shadow-glow);
+}
+
+.rev-arrow-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Slide Indicator & Dots */
+.rev-pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rev-number-indicator {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-charcoal-900);
+  letter-spacing: 0.05em;
+}
+
+.rev-number-indicator span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.rev-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rev-dot {
+  width: 28px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: rgba(30, 34, 41, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.rev-dot.is-active {
+  width: 48px;
+  background: var(--color-rose-500);
+  box-shadow: 0 0 12px rgba(196, 109, 119, 0.4);
+}
+
+/* Responsive Rules for Revolution Slider Hero */
+@media (max-width: 1080px) {
+  .rev-slide-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .rev-text-layer {
+    align-items: center;
+  }
+  .rev-actions {
+    justify-content: center;
+  }
+  .rev-visual-stage {
+    height: 480px;
+    margin-top: 20px;
+  }
+  .rev-nurse-img {
+    max-height: 460px;
+  }
+  .rev-portrait-backdrop {
+    width: 360px;
+    height: 440px;
+  }
+  .rev-card-exp {
+    left: 5%;
+  }
+  .rev-card-avail {
+    right: 5%;
+  }
+  .rev-card-vital {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .rev-hero-section {
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .rev-slide {
+    padding-bottom: 50px;
+  }
+  .rev-visual-stage {
+    height: 380px;
+  }
+  .rev-nurse-img {
+    max-height: 360px;
+  }
+  .rev-portrait-backdrop {
+    width: 280px;
+    height: 360px;
+  }
+  .rev-float-card {
+    padding: 10px 14px;
+  }
+  .rev-card-exp {
+    top: 5%;
+    left: 0;
+  }
+  .rev-card-avail {
+    bottom: 5%;
+    right: 0;
+  }
+  .rev-controls-inner {
+    justify-content: center;
+    gap: 20px;
+  }
+  .rev-arrows {
+    display: none; /* Mobile touch swipe enabled */
+  }
+}

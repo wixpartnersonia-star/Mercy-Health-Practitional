@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | MercyHealthCare &bull; Mercy Medical Hospital, Osogbo</title>
+  <meta name="description" content="Explore 14 professional general healthcare and nursing services offered by MercyHealthCare at Mercy Medical Hospital in Osogbo, Osun State: consultations, screenings, family wellness, and telehealth.">
+  <meta name="keywords" content="Healthcare Services Osogbo, Health Screening Osun State, General Consultation, Family Care, Telehealth Nigeria, Mercy Medical Hospital">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .page-hero-banner {
+      background: radial-gradient(circle at 80% 20%, rgba(253, 240, 240, 0.85) 0%, rgba(252, 252, 250, 0.95) 60%, var(--color-canvas) 100%);
+      padding: clamp(60px, 8vw, 96px) 0 clamp(40px, 6vw, 64px);
+      border-bottom: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    /* Featured Service Deep Dive Box */
+    .featured-service-hero {
+      background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-ivory) 100%);
+      border: 1.5px solid var(--color-rose-300);
+      border-radius: var(--radius-xl);
+      padding: clamp(32px, 5vw, 64px);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: clamp(60px, 8vw, 96px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-service-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .check-list-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 20px;
+      margin: 24px 0 32px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--color-charcoal-800);
+    }
+
+    .check-item svg {
+      color: var(--color-rose-600);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 900px) {
+      .featured-service-grid {
+        grid-template-columns: 1fr;
+      }
+      .check-list-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="status-dot-active"></span>
+          <span><strong>24/7 Available</strong> &bull; Mercy Medical Hospital, Osogbo</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:09131905580" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>09131905580</span>
+        </a>
+        <a href="https://wa.me/2349073732756" target="_blank" rel="noopener" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>WhatsApp Care</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Modern Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="MercyHealthCare Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M2 12h20"/>
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Mercy<span>HealthCare</span></span>
+          <span class="brand-subtitle">Mercy Medical Hospital &bull; Osogbo</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Our Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button type="button" class="btn btn-primary open-appointment-modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Request an Appointment</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-links">
+        <div style="margin-bottom: 24px;">
+          <span class="text-eyebrow">MercyHealthCare</span>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted);">Mercy Medical Hospital, Osogbo, Osun State</p>
+        </div>
+        <a href="index.html" class="mobile-drawer-link">Home</a>
+        <a href="about.html" class="mobile-drawer-link">About Us</a>
+        <a href="services.html" class="mobile-drawer-link active">Our Services</a>
+        <a href="contact.html" class="mobile-drawer-link">Contact Us</a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <button type="button" class="btn btn-primary open-appointment-modal" style="width: 100%;">
+          Request an Appointment
+        </button>
+        <div style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">
+          24/7 Phone: <a href="tel:09131905580" style="color: var(--color-rose-600); font-weight: 600;">09131905580</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SERVICES PAGE HERO
+         ========================================================================== -->
+    <section class="page-hero-banner">
+      <div class="container">
+        <span class="text-eyebrow">CLINICAL SERVICES</span>
+        <h1 class="section-title">Comprehensive Healthcare Services</h1>
+        <p class="section-subtitle" style="margin: 0 auto 32px;">
+          Compassionate, patient-first care delivered with over 7 years of nursing experience. Explore our 14 dedicated healthcare services available in-person at Mercy Medical Hospital, Osogbo or online.
+        </p>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="filter-tabs">
+          <button type="button" class="filter-tab-btn active" data-filter="all">All Services (14)</button>
+          <button type="button" class="filter-tab-btn" data-filter="general">General Care</button>
+          <button type="button" class="filter-tab-btn" data-filter="preventive">Preventive Care</button>
+          <button type="button" class="filter-tab-btn" data-filter="family">Family Care</button>
+          <button type="button" class="filter-tab-btn" data-filter="wellness">Wellness &amp; Counseling</button>
+          <button type="button" class="filter-tab-btn" data-filter="monitoring">Monitoring &amp; Follow-Up</button>
+          <button type="button" class="filter-tab-btn" data-filter="telehealth">Online Telehealth</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED SERVICE SPOTLIGHT (Screening & Vital Monitoring)
+         ========================================================================== -->
+    <section class="container section-padding" style="padding-bottom: 20px;">
+      <div class="featured-service-hero reveal-on-scroll">
+        <div class="featured-service-grid">
+          <div>
+            <span class="pill-tag pill-tag-gold" style="margin-bottom: 16px;">FEATURED CLINICAL SERVICE</span>
+            <h2 class="section-title" style="font-size: clamp(1.85rem, 3.2vw, 2.6rem); margin-bottom: 16px;">
+              Routine Health Screening &amp; Vital Signs Monitoring
+            </h2>
+            <p style="font-size: 1rem; line-height: 1.7; color: var(--color-charcoal-800);">
+              Early detection is the cornerstone of lifelong vitality. Our comprehensive screening protocol evaluates vital health benchmarks, identifies potential vulnerabilities before symptoms manifest, and provides a clear, actionable roadmap for proactive wellbeing.
+            </p>
+
+            <div class="check-list-grid">
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Blood Pressure &amp; Pulse Tracking</span>
+              </div>
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Blood Glucose Screening</span>
+              </div>
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>BMI &amp; Body Composition Review</span>
+              </div>
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Temperature &amp; Respiratory Check</span>
+              </div>
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Personalized Health Coaching</span>
+              </div>
+              <div class="check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Structured Follow-Up Schedule</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary open-appointment-modal" data-service="Routine Health Screening">
+                <span>Book Health Screening</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+              <a href="tel:09131905580" class="btn btn-secondary">Call Hospital Desk</a>
+            </div>
+          </div>
+
+          <div class="editorial-visual-frame">
+            <div class="editorial-image-wrap" style="aspect-ratio: 4/3;">
+              <img src="assets/images/vital-screening.jpg" alt="Patient Vital Signs Screening at Mercy Medical Hospital" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COMPLETE 14 SERVICES CATALOG GRID
+         ========================================================================== -->
+    <section class="container" style="margin-bottom: clamp(64px, 8vw, 110px);">
+      <div class="services-grid" id="servicesCatalogGrid">
+        
+        <!-- Service 1 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="general">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="service-number">01</span>
+            </div>
+            <h3 class="service-title">General Health Consultation</h3>
+            <p class="service-desc">
+              Comprehensive assessments for everyday acute complaints, illness evaluation, symptom analysis, and thoughtful recovery guidance rooted in attentive medical evaluation.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">General Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="General Health Consultation">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="preventive">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="service-number">02</span>
+            </div>
+            <h3 class="service-title">Preventive Healthcare</h3>
+            <p class="service-desc">
+              Early risk identification and proactive wellness counsel tailored to help individuals protect long-term health and prevent acute onset of chronic conditions.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Preventive Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Preventive Healthcare">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="preventive monitoring">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <span class="service-number">03</span>
+            </div>
+            <h3 class="service-title">Routine Health Screening</h3>
+            <p class="service-desc">
+              Systematic diagnostic checkpoints covering vital organ functioning, blood pressure baselines, blood sugar patterns, and preventive health indicators.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Preventive Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Routine Health Screening">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="monitoring general">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="service-number">04</span>
+            </div>
+            <h3 class="service-title">Vital Signs &amp; Health Monitoring</h3>
+            <p class="service-desc">
+              Close clinical monitoring of blood pressure, heart rhythm, body temperature, pulse oximetry, and respiratory stability for ongoing patient safety.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Monitoring</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Vital Signs &amp; Health Monitoring">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="family">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span class="service-number">05</span>
+            </div>
+            <h3 class="service-title">Family Healthcare</h3>
+            <p class="service-desc">
+              Comprehensive care addressing the health needs of parents, children, and multigenerational households under one trusted, empathetic healthcare home.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Family Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Family Healthcare">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="family">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>
+              </div>
+              <span class="service-number">06</span>
+            </div>
+            <h3 class="service-title">Women’s Health Support</h3>
+            <p class="service-desc">
+              Confidential guidance on reproductive health, menstrual comfort, prenatal health fundamentals, nutritional support, and general maternal wellness.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Family Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Women’s Health Support">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 7 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="family">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <span class="service-number">07</span>
+            </div>
+            <h3 class="service-title">Children’s Health Support</h3>
+            <p class="service-desc">
+              Gentle paediatric assessments, growth tracking, childhood fever evaluation, immunization schedule guidance, and nutritional advice for infants and children.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Family Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Children’s Health Support">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 8 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="family monitoring">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+              </div>
+              <span class="service-number">08</span>
+            </div>
+            <h3 class="service-title">Elderly Care</h3>
+            <p class="service-desc">
+              Compassionate geriatric support addressing mobility, medication management, regular vital tracking, cognitive wellness, and dignified elder assistance.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Family Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Elderly Care">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 9 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="wellness">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <span class="service-number">09</span>
+            </div>
+            <h3 class="service-title">Health Education &amp; Counseling</h3>
+            <p class="service-desc">
+              Clear, patient-friendly guidance on understanding medical reports, treatment routines, prescription regimens, and healthy family health hygiene.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Wellness</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Health Education &amp; Counseling">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 10 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="wellness">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </div>
+              <span class="service-number">10</span>
+            </div>
+            <h3 class="service-title">Wellness &amp; Lifestyle Guidance</h3>
+            <p class="service-desc">
+              Practical strategies for restorative sleep, balanced nutrition, stress reduction, and healthy physical routines tailored to your daily schedule and energy.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Wellness</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Wellness &amp; Lifestyle Guidance">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 11 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="monitoring">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <span class="service-number">11</span>
+            </div>
+            <h3 class="service-title">Chronic Health Monitoring</h3>
+            <p class="service-desc">
+              Dedicated ongoing observation for patients managing hypertension, diabetes, or asthma, preventing complications and maintaining stable health metrics.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Monitoring</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Chronic Health Monitoring">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 12 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="telehealth">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span class="service-number">12</span>
+            </div>
+            <h3 class="service-title">Telehealth Consultation</h3>
+            <p class="service-desc">
+              Convenient virtual healthcare consultations via video or phone, providing timely professional advice, symptom triaging, and follow-up support from home.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Telehealth</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Telehealth Consultation">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 13 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="monitoring">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span class="service-number">13</span>
+            </div>
+            <h3 class="service-title">Follow-Up &amp; Patient Support</h3>
+            <p class="service-desc">
+              Post-consultation follow-ups to track your treatment tolerance, answer questions, assess symptom resolution, and provide peace of mind throughout recovery.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">Monitoring</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Follow-Up &amp; Patient Support">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 14 -->
+        <article class="service-card service-card-item reveal-on-scroll" data-category="general">
+          <div>
+            <div class="service-top">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <span class="service-number">14</span>
+            </div>
+            <h3 class="service-title">Basic Health Assessment</h3>
+            <p class="service-desc">
+              Essential foundational evaluation of physical wellness, medical history compilation, and basic functional screenings for employment, schooling, or sports clearance.
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-cat-pill">General Care</span>
+            <button type="button" class="btn-text open-appointment-modal" data-service="Basic Health Assessment">
+              Book Appointment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Global CTA Banner -->
+    <section class="container" style="margin-bottom: clamp(64px, 8vw, 110px);">
+      <div class="appointment-banner reveal-on-scroll">
+        <div class="appointment-banner-content">
+          <span class="text-eyebrow" style="color: var(--color-rose-300);">ACCESSIBLE 24/7</span>
+          <h2>Not Sure Which Service You Need?</h2>
+          <p>Schedule a preliminary general consultation or message our team directly. We are happy to advise you on the most appropriate care pathway.</p>
+          <div class="appointment-banner-actions">
+            <button type="button" class="btn btn-primary open-appointment-modal" style="background: #FFFFFF; color: var(--color-charcoal-950);">
+              Schedule a Consultation
+            </button>
+            <a href="https://wa.me/2349073732756" target="_blank" rel="noopener" class="btn btn-outline-gold" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+              Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Modal -->
+  <div class="appointment-modal-backdrop" id="appointmentModal" role="dialog" aria-modal="true">
+    <div class="appointment-modal-window">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="text-eyebrow">MERCY MEDICAL HOSPITAL &bull; OSOGBO</span>
+        <h3 class="form-title">Request an Appointment</h3>
+        <p class="form-subtitle">Select your desired service and preferred timing.</p>
+      </div>
+
+      <form id="appointmentModalForm">
+        <div class="form-grid">
+          <div class="form-floating-group">
+            <label class="form-label" for="mFullName">Full Name *</label>
+            <input type="text" id="mFullName" name="fullName" class="form-control" required placeholder="Your full name">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mPhone">Phone Number *</label>
+            <input type="tel" id="mPhone" name="phone" class="form-control" required placeholder="e.g. 09131905580">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mEmail">Email Address</label>
+            <input type="email" id="mEmail" name="email" class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="modalServiceSelect">Service</label>
+            <select id="modalServiceSelect" name="reason" class="form-control">
+              <option value="General Health Consultation">General Health Consultation</option>
+              <option value="Preventive Healthcare">Preventive Healthcare</option>
+              <option value="Routine Health Screening">Routine Health Screening</option>
+              <option value="Vital Signs &amp; Health Monitoring">Vital Signs &amp; Health Monitoring</option>
+              <option value="Family Healthcare">Family Healthcare</option>
+              <option value="Women’s Health Support">Women’s Health Support</option>
+              <option value="Children’s Health Support">Children’s Health Support</option>
+              <option value="Elderly Care">Elderly Care</option>
+              <option value="Health Education &amp; Counseling">Health Education &amp; Counseling</option>
+              <option value="Wellness &amp; Lifestyle Guidance">Wellness &amp; Lifestyle Guidance</option>
+              <option value="Chronic Health Monitoring">Chronic Health Monitoring</option>
+              <option value="Telehealth Consultation">Telehealth Consultation</option>
+              <option value="Follow-Up &amp; Patient Support">Follow-Up &amp; Patient Support</option>
+              <option value="Basic Health Assessment">Basic Health Assessment</option>
+            </select>
+          </div>
+          <div class="form-group-full">
+            <label class="form-label">Consultation Format *</label>
+            <div class="radio-pill-group">
+              <label class="radio-pill-label">
+                <input type="radio" name="consultationType" value="In-Person (Mercy Medical Hospital, Osogbo)" checked>
+                <span>In-Person at Hospital</span>
+              </label>
+              <label class="radio-pill-label">
+                <input type="radio" name="consultationType" value="Online Telehealth Consultation">
+                <span>Online / Telehealth</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mDate">Preferred Date</label>
+            <input type="date" id="mDate" name="date" class="form-control">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mTime">Preferred Time</label>
+            <select id="mTime" name="time" class="form-control">
+              <option value="Morning (8:00 AM - 12:00 PM)">Morning</option>
+              <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon</option>
+              <option value="Evening (4:00 PM - 8:00 PM)">Evening</option>
+            </select>
+          </div>
+          <div class="form-group-full">
+            <label class="form-label" for="mMessage">Additional Symptoms or Notes</label>
+            <textarea id="mMessage" name="message" class="form-control" rows="3" placeholder="Brief details about your request..."></textarea>
+          </div>
+          <div class="form-group-full" style="margin-top: 10px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <span>Submit Appointment Request</span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-success-box" id="modalSuccessBox"></div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-legal-notice">
+        <strong>Important Medical &amp; Emergency Notice:</strong> This website provides general healthcare information, nursing consultation booking, and health education. It is not an automated replacement for acute life-threatening emergency medical services. In the event of a critical emergency, please visit Mercy Medical Hospital in Osogbo immediately.
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #FFFFFF;">
+            <div class="brand-emblem" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: var(--color-rose-300);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9" stroke-opacity="0.35"/></svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">Mercy<span style="color: var(--color-rose-300);">HealthCare</span></span>
+              <span class="brand-subtitle" style="color: rgba(255,255,255,0.6);">Mercy Medical Hospital &bull; Osogbo</span>
+            </div>
+          </div>
+          <p>Care That Listens. Healthcare That Understands. 14 specialized healthcare and nursing services designed for individuals and families in Osogbo, Osun State.</p>
+          <div class="social-links-bar">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="X Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/></svg></a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social-link-btn" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="open-appointment-modal">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Categories</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">General Care</a></li>
+            <li><a href="services.html">Preventive Healthcare</a></li>
+            <li><a href="services.html">Routine Screenings</a></li>
+            <li><a href="services.html">Family Healthcare</a></li>
+            <li><a href="services.html">Telehealth Consultations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mercy Medical Hospital</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Osogbo, Osun State, Nigeria</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><a href="tel:09131905580">09131905580</a> / <a href="tel:08111140578">08111140578</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/2349073732756" target="_blank" rel="noopener">09073732756 (WhatsApp)</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:obayomiesther73@gmail.com">obayomiesther73@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Opening Hours: 24 Hours Daily</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 MercyHealthCare. All Rights Reserved. Mercy Medical Hospital, Osogbo.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Medical Disclaimer</a>
+          <a href="#">Patient Confidentiality</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

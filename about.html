@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | MercyHealthCare &bull; Mercy Medical Hospital, Osogbo</title>
+  <meta name="description" content="Learn about MercyHealthCare, led by a dedicated professional nurse with 7+ years experience and B.Sc. in Nursing from Osun State University, providing compassionate general healthcare at Mercy Medical Hospital in Osogbo.">
+  <meta name="keywords" content="About MercyHealthCare, Nurse Osun State University, Mercy Medical Hospital Osogbo, Nursing Practice Nigeria, Patient Centered Care">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Specific styles for About Us editorial layouts */
+    .page-hero-banner {
+      background: radial-gradient(circle at 80% 20%, rgba(253, 240, 240, 0.85) 0%, rgba(252, 252, 250, 0.95) 60%, var(--color-canvas) 100%);
+      padding: clamp(60px, 8vw, 100px) 0 clamp(40px, 6vw, 70px);
+      border-bottom: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .credential-strip {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .credential-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-xs);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-charcoal-900);
+    }
+
+    .credential-pill svg {
+      color: var(--color-rose-600);
+    }
+
+    /* Professional Timeline */
+    .exp-timeline {
+      position: relative;
+      padding: 30px 0;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .exp-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 30px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--color-rose-500) 0%, var(--color-border) 100%);
+    }
+
+    .timeline-node {
+      position: relative;
+      padding-left: 80px;
+      margin-bottom: 48px;
+    }
+
+    .timeline-node:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 17px;
+      top: 4px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-surface);
+      border: 2px solid var(--color-rose-500);
+      box-shadow: 0 0 0 6px var(--color-blush-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-rose-600);
+    }
+
+    .timeline-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-xs);
+      transition: all var(--transition-smooth);
+    }
+
+    .timeline-card:hover {
+      transform: translateX(6px);
+      border-color: var(--color-rose-300);
+      box-shadow: var(--shadow-md);
+    }
+
+    .timeline-period {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-rose-600);
+      margin-bottom: 6px;
+    }
+
+    .timeline-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+      color: var(--color-charcoal-900);
+    }
+
+    /* What We Believe Grid */
+    .beliefs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .belief-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow-xs);
+      transition: all var(--transition-smooth);
+      position: relative;
+    }
+
+    .belief-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-champagne);
+    }
+
+    .belief-icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--color-blush-100);
+      border: 1px solid var(--color-blush-200);
+      color: var(--color-rose-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: all var(--transition-fast);
+    }
+
+    .belief-card:hover .belief-icon-box {
+      background: var(--color-rose-500);
+      color: #FFFFFF;
+      transform: scale(1.08);
+    }
+
+    .belief-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--color-charcoal-900);
+      margin-bottom: 10px;
+    }
+
+    .belief-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-body);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 640px) {
+      .exp-timeline::before {
+        left: 15px;
+      }
+      .timeline-node {
+        padding-left: 50px;
+      }
+      .timeline-marker {
+        left: 2px;
+      }
+      .timeline-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="status-dot-active"></span>
+          <span><strong>24/7 Available</strong> &bull; Mercy Medical Hospital, Osogbo</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:09131905580" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>09131905580</span>
+        </a>
+        <a href="https://wa.me/2349073732756" target="_blank" rel="noopener" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>WhatsApp Care</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Modern Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="MercyHealthCare Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M2 12h20"/>
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Mercy<span>HealthCare</span></span>
+          <span class="brand-subtitle">Mercy Medical Hospital &bull; Osogbo</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button type="button" class="btn btn-primary open-appointment-modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Request an Appointment</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-links">
+        <div style="margin-bottom: 24px;">
+          <span class="text-eyebrow">MercyHealthCare</span>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted);">Mercy Medical Hospital, Osogbo, Osun State</p>
+        </div>
+        <a href="index.html" class="mobile-drawer-link">Home</a>
+        <a href="about.html" class="mobile-drawer-link active">About Us</a>
+        <a href="services.html" class="mobile-drawer-link">Our Services</a>
+        <a href="contact.html" class="mobile-drawer-link">Contact Us</a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <button type="button" class="btn btn-primary open-appointment-modal" style="width: 100%;">
+          Request an Appointment
+        </button>
+        <div style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">
+          24/7 Phone: <a href="tel:09131905580" style="color: var(--color-rose-600); font-weight: 600;">09131905580</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         ABOUT HERO SECTION
+         ========================================================================== -->
+    <section class="page-hero-banner" aria-label="About Us Introduction">
+      <div class="container">
+        <div class="split-editorial" style="align-items: center;">
+          
+          <div class="reveal-on-scroll">
+            <span class="text-eyebrow">PROFESSIONAL PROFILE</span>
+            <h1 class="section-title" style="margin-bottom: 20px;">
+              Healthcare With Experience.<br>
+              <em style="color: var(--color-rose-600); font-style: italic;">Care With Compassion.</em>
+            </h1>
+            <p style="font-size: 1.125rem; line-height: 1.75; color: var(--color-charcoal-800); margin-bottom: 24px;">
+              With over 7 years of experience in nursing and general healthcare, MercyHealthCare is committed to providing compassionate, respectful, and patient-centered care. Our approach combines professional knowledge, attentive listening, preventive healthcare, and personalized guidance to help individuals and families feel informed, supported, and confident throughout their healthcare journey.
+            </p>
+
+            <div class="credential-strip">
+              <div class="credential-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>7+ Years Experience</span>
+              </div>
+              <div class="credential-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span>B.Sc. Nursing &bull; Osun State University</span>
+              </div>
+              <div class="credential-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                <span>General Healthcare Practice</span>
+              </div>
+              <div class="credential-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>In-Person &amp; Online Consultation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nurse Portrait Frame -->
+          <div class="editorial-visual-frame reveal-on-scroll">
+            <div class="editorial-image-wrap" style="aspect-ratio: 4/5; max-height: 520px; display: flex; align-items: flex-end; justify-content: center; background: radial-gradient(circle, var(--color-blush-100) 0%, var(--color-surface-ivory) 100%);">
+              <img src="assets/images/nurse-hero.png" alt="MercyHealthCare Professional Nurse Practitioner" style="height: 100%; width: auto; object-fit: contain;">
+            </div>
+            <div class="editorial-float-badge" style="bottom: -15px; left: -15px; right: auto;">
+              <div class="badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <strong style="font-size: 0.9375rem; color: var(--color-charcoal-900);">Patient-First Care</strong>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Compassion &amp; Dignity</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OUR PHILOSOPHY & STORY
+         ========================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="split-editorial" style="align-items: center;">
+          
+          <div class="editorial-visual-frame reveal-on-scroll">
+            <div class="editorial-image-wrap" style="aspect-ratio: 4/3;">
+              <img src="assets/images/vital-screening.jpg" alt="Patient Vital Examination at Mercy Medical Hospital" loading="lazy">
+            </div>
+          </div>
+
+          <div class="editorial-content reveal-on-scroll">
+            <span class="text-eyebrow">OUR PHILOSOPHY</span>
+            <h2 class="section-title">Quality Healthcare Begins With Listening</h2>
+            
+            <div class="editorial-quote-box" style="margin-bottom: 20px;">
+              “At MercyHealthCare, we believe quality healthcare begins with listening. Every patient deserves to feel heard, respected, informed, and cared for. Our approach combines professional expertise with genuine compassion to create a healthcare experience centered around the individual.”
+            </div>
+
+            <p style="font-size: 0.9375rem; line-height: 1.7; color: var(--color-text-body);">
+              In modern medical systems, patients are too often reduced to charts and rapid checklists. At <strong>Mercy Medical Hospital</strong> in Osogbo, we take the deliberate time to understand your lifestyle, emotional state, family background, and health goals before recommending pathways.
+            </p>
+
+            <p style="font-size: 0.9375rem; line-height: 1.7; color: var(--color-text-body);">
+              Whether diagnosing an acute concern, counseling on routine wellness, or guiding chronic management, our commitment is that you leave each consultation feeling empowered, informed, and truly cared for.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL EXPERIENCE TIMELINE
+         ========================================================================== -->
+    <section class="section-padding" style="background: var(--color-surface-soft); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="text-eyebrow">CLINICAL JOURNEY</span>
+          <h2 class="section-title">Professional Growth &amp; Dedication</h2>
+          <p class="section-subtitle">
+            A continuous trajectory of medical training, hands-on clinical nursing, patient advocacy, and community healthcare excellence in Osun State.
+          </p>
+        </div>
+
+        <div class="exp-timeline">
+          
+          <div class="timeline-node reveal-on-scroll">
+            <div class="timeline-marker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-period">Academic Excellence</span>
+              <h3>Bachelor of Science in Nursing &bull; Osun State University</h3>
+              <p style="font-size: 0.9375rem; color: var(--color-text-body); line-height: 1.6;">
+                Completed comprehensive clinical nursing and healthcare sciences at Osun State University, mastering anatomy, pathology, patient assessment, pharmacology, community medicine, and medical ethics.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-node reveal-on-scroll">
+            <div class="timeline-marker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-period">Clinical Foundation</span>
+              <h3>General Healthcare &amp; Acute Nursing Practice</h3>
+              <p style="font-size: 0.9375rem; color: var(--color-text-body); line-height: 1.6;">
+                Extensive inpatient and outpatient clinical experience, monitoring vital signs, administering therapies, coordinating patient triage, and handling multi-disciplinary healthcare cases with diligence and speed.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-node reveal-on-scroll">
+            <div class="timeline-marker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-period">Preventive Health Advocacy</span>
+              <h3>Community Health Screening &amp; Preventive Education</h3>
+              <p style="font-size: 0.9375rem; color: var(--color-text-body); line-height: 1.6;">
+                Led community screenings for hypertension, diabetes, maternal health, and routine wellness. Championed proactive lifestyle interventions to arrest chronic disease risks before onset.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-node reveal-on-scroll">
+            <div class="timeline-marker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-period">Today &bull; Continuous Care</span>
+              <h3>MercyHealthCare at Mercy Medical Hospital</h3>
+              <p style="font-size: 0.9375rem; color: var(--color-text-body); line-height: 1.6;">
+                7+ years of dedication delivering compassionate 24/7 healthcare at Mercy Medical Hospital in Osogbo, paired with online telehealth to make professional medical guidance easily accessible anywhere in Osun State.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHAT WE BELIEVE (5 Core Tenets)
+         ========================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="text-eyebrow">OUR CORE PRINCIPLES</span>
+          <h2 class="section-title">What We Believe</h2>
+          <p class="section-subtitle">
+            Five guiding pillars that shape every consultation, diagnosis, and patient relationship at MercyHealthCare.
+          </p>
+        </div>
+
+        <div class="beliefs-grid">
+          
+          <div class="belief-card reveal-on-scroll">
+            <div class="belief-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <h3 class="belief-title">Listen First</h3>
+            <p class="belief-desc">Every effective treatment starts with undivided attention and listening to what the patient expresses.</p>
+          </div>
+
+          <div class="belief-card reveal-on-scroll">
+            <div class="belief-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="belief-title">Treat With Respect</h3>
+            <p class="belief-desc">Unwavering dignity, personal privacy, and non-judgmental empathy for every individual and family.</p>
+          </div>
+
+          <div class="belief-card reveal-on-scroll">
+            <div class="belief-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="belief-title">Educate With Clarity</h3>
+            <p class="belief-desc">Medical explanations free of confusing jargon, allowing you to make confident, informed decisions.</p>
+          </div>
+
+          <div class="belief-card reveal-on-scroll">
+            <div class="belief-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            </div>
+            <h3 class="belief-title">Support Every Step</h3>
+            <p class="belief-desc">Continuous companionship throughout testing, treatment, and recovery, so you never feel alone.</p>
+          </div>
+
+          <div class="belief-card reveal-on-scroll">
+            <div class="belief-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="belief-title">Promote Prevention</h3>
+            <p class="belief-desc">Proactive wellness screenings and early intervention that protect health before illness surfaces.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOSPITAL FACILITY SPOTLIGHT (Mercy Medical Hospital in Osogbo)
+         ========================================================================== -->
+    <section class="section-padding" style="background: var(--color-surface-ivory); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="split-editorial" style="align-items: center;">
+          
+          <div class="editorial-content reveal-on-scroll">
+            <span class="text-eyebrow">OUR CLINICAL FACILITY</span>
+            <h2 class="section-title">Mercy Medical Hospital, Osogbo</h2>
+            <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--color-charcoal-800);">
+              Mercy Medical Hospital in Osogbo, Osun State, provides a calm, safe, and modern healthcare environment. Featuring private consultation suites, sanitized examination rooms, reliable emergency response capabilities, and 24-hour medical availability.
+            </p>
+            <p style="font-size: 0.9375rem; line-height: 1.7; color: var(--color-text-body);">
+              Whether visiting for routine health assessments, vital checks, maternal guidance, or specialized general consultations, our practice welcomes you into an atmosphere of dignity, cleanliness, and clinical excellence.
+            </p>
+            <div style="margin-top: 14px; display: flex; gap: 16px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary open-appointment-modal">Request Consultation</button>
+              <a href="contact.html" class="btn btn-secondary">Get Directions &bull; Osogbo</a>
+            </div>
+          </div>
+
+          <div class="editorial-visual-frame reveal-on-scroll">
+            <div class="editorial-image-wrap" style="aspect-ratio: 16/10;">
+              <img src="assets/images/hospital-exterior.jpg" alt="Mercy Medical Hospital Exterior in Osogbo, Osun State" loading="lazy">
+            </div>
+            <div class="editorial-float-badge" style="bottom: -15px; right: -15px;">
+              <div class="badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong style="font-size: 0.9375rem; color: var(--color-charcoal-900);">24/7 Availability</strong>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Emergency &amp; General Intake</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Global CTA Banner -->
+    <section class="container section-padding">
+      <div class="appointment-banner reveal-on-scroll">
+        <div class="appointment-banner-content">
+          <span class="text-eyebrow" style="color: var(--color-rose-300);">CONNECT WITH US</span>
+          <h2>Experience Healthcare That Understands.</h2>
+          <p>Book an in-person appointment at Mercy Medical Hospital or schedule a confidential online consultation.</p>
+          <div class="appointment-banner-actions">
+            <button type="button" class="btn btn-primary open-appointment-modal" style="background: #FFFFFF; color: var(--color-charcoal-950);">
+              Request an Appointment
+            </button>
+            <a href="contact.html" class="btn btn-outline-gold" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+              View Hospital Contacts
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Modal -->
+  <div class="appointment-modal-backdrop" id="appointmentModal" role="dialog" aria-modal="true">
+    <div class="appointment-modal-window">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="text-eyebrow">MERCY MEDICAL HOSPITAL &bull; OSOGBO</span>
+        <h3 class="form-title">Request an Appointment</h3>
+        <p class="form-subtitle">Fill out the form below to schedule your consultation.</p>
+      </div>
+
+      <form id="appointmentModalForm">
+        <div class="form-grid">
+          <div class="form-floating-group">
+            <label class="form-label" for="mFullName">Full Name *</label>
+            <input type="text" id="mFullName" name="fullName" class="form-control" required placeholder="Your full name">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mPhone">Phone Number *</label>
+            <input type="tel" id="mPhone" name="phone" class="form-control" required placeholder="e.g. 09131905580">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mEmail">Email Address</label>
+            <input type="email" id="mEmail" name="email" class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="modalServiceSelect">Service</label>
+            <select id="modalServiceSelect" name="reason" class="form-control">
+              <option value="General Health Consultation">General Health Consultation</option>
+              <option value="Preventive Healthcare">Preventive Healthcare</option>
+              <option value="Routine Health Screening">Routine Health Screening</option>
+              <option value="Vital Signs &amp; Health Monitoring">Vital Signs &amp; Health Monitoring</option>
+              <option value="Family Healthcare">Family Healthcare</option>
+              <option value="Telehealth Consultation">Telehealth Consultation</option>
+            </select>
+          </div>
+          <div class="form-group-full">
+            <label class="form-label">Consultation Format *</label>
+            <div class="radio-pill-group">
+              <label class="radio-pill-label">
+                <input type="radio" name="consultationType" value="In-Person (Mercy Medical Hospital, Osogbo)" checked>
+                <span>In-Person at Hospital</span>
+              </label>
+              <label class="radio-pill-label">
+                <input type="radio" name="consultationType" value="Online Telehealth Consultation">
+                <span>Online / Telehealth</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mDate">Preferred Date</label>
+            <input type="date" id="mDate" name="date" class="form-control">
+          </div>
+          <div class="form-floating-group">
+            <label class="form-label" for="mTime">Preferred Time</label>
+            <select id="mTime" name="time" class="form-control">
+              <option value="Morning (8:00 AM - 12:00 PM)">Morning</option>
+              <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon</option>
+              <option value="Evening (4:00 PM - 8:00 PM)">Evening</option>
+            </select>
+          </div>
+          <div class="form-group-full">
+            <label class="form-label" for="mMessage">Notes or Symptoms</label>
+            <textarea id="mMessage" name="message" class="form-control" rows="3" placeholder="Brief description of your health inquiry..."></textarea>
+          </div>
+          <div class="form-group-full" style="margin-top: 10px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <span>Submit Appointment Request</span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-success-box" id="modalSuccessBox"></div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-legal-notice">
+        <strong>Important Medical &amp; Emergency Notice:</strong> This website provides general healthcare information, nursing consultation booking, and health education. It is not an automated replacement for acute life-threatening emergency medical services. In the event of a critical emergency, please visit Mercy Medical Hospital in Osogbo immediately or contact state emergency services.
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #FFFFFF;">
+            <div class="brand-emblem" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: var(--color-rose-300);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9" stroke-opacity="0.35"/></svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">Mercy<span style="color: var(--color-rose-300);">HealthCare</span></span>
+              <span class="brand-subtitle" style="color: rgba(255,255,255,0.6);">Mercy Medical Hospital &bull; Osogbo</span>
+            </div>
+          </div>
+          <p>Care That Listens. Healthcare That Understands. Compassionate nursing and general healthcare practice in Osun State, Nigeria.</p>
+          <div class="social-links-bar">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="X Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/></svg></a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social-link-btn" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="open-appointment-modal">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinical Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">General Health Consultation</a></li>
+            <li><a href="services.html">Preventive Healthcare</a></li>
+            <li><a href="services.html">Routine Health Screening</a></li>
+            <li><a href="services.html">Vital Signs Monitoring</a></li>
+            <li><a href="services.html">Family Healthcare</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mercy Medical Hospital</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Osogbo, Osun State, Nigeria</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><a href="tel:09131905580">09131905580</a> / <a href="tel:08111140578">08111140578</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/2349073732756" target="_blank" rel="noopener">09073732756 (WhatsApp)</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:obayomiesther73@gmail.com">obayomiesther73@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Opening Hours: 24 Hours Daily</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 MercyHealthCare. All Rights Reserved. Mercy Medical Hospital, Osogbo.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Medical Disclaimer</a>
+          <a href="#">Patient Confidentiality</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
